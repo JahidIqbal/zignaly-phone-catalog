@@ -4,7 +4,7 @@ import Phone from '../Phone/Phone';
 const PhoneListContainer = () => {
     const [phones, setPhones] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/phones')
+        fetch('https://thawing-headland-33318.herokuapp.com/phones')
             .then(res => res.json())
             .then(data => setPhones(data))
     }, [])
